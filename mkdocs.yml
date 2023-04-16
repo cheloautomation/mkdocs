@@ -1,0 +1,12 @@
+site_name: Chelo Automation
+site_url: https://www.chelo-automation.com
+theme: readthedocs
+
+nav:
+  - "Home Assistant": 
+    - Addons: home_assistant/addons/addons.md
+  - Servidores: 
+    - NAS: servidores/nas/nas.md
+    - Proxmox: 
+      - Containers: servidores/proxmox/containers/containers.md
+      - VMs: servidores/proxmox/servidores_virtuales/vms.md
