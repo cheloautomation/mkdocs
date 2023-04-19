@@ -2,11 +2,23 @@ site_name: Chelo Automation
 site_url: https://www.chelo-automation.com
 theme: readthedocs
 
+markdown_extensions:
+    - toc:
+        permalink: "#"
+        baselevel: 2
+        separator: "_"
+
 nav:
   - "Home Assistant": 
+    - Instalacion: home_assistant/instalacion/instalacion.md
     - Addons: home_assistant/addons/addons.md
-  - Servidores: 
-    - NAS: servidores/nas/nas.md
-    - Proxmox: 
-      - Containers: servidores/proxmox/containers/containers.md
-      - VMs: servidores/proxmox/servidores_virtuales/vms.md
+  - Proxmox: 
+    - Containers: servidores/proxmox/containers/containers.md
+    - VMs: servidores/proxmox/servidores_virtuales/vms.md
+  - NAS: 
+    - Definicion: servidores/nas/nas.md
+    - Linux: servidores/nas/debian_nas.md
+    - UnRaid: servidores/nas/UnRaid/unraid.md
+    - TrueNAS: 
+      - Core: servidores/nas/FreeNAS/Core/freenas_core.md
+      - Scale: servidores/nas/FreeNAS/Scale/freenas_scale.md
